@@ -1,6 +1,5 @@
-# Looking for mantainer
-This plugin is not updated for working on last ghost version.
-
+# Fork notes
+This is a fork of the no longer maintained package ghost-google-cloud-storage
 # Ghost Google Cloud Storage Plugin 
 A simple plugin to add Google Cloud Storage support for a Ghost Blog. 
 

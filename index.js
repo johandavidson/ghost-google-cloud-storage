@@ -1,17 +1,17 @@
 'use strict';
 
-var storage     = require('@google-cloud/storage'),
-    BaseStore   = require('ghost-storage-base'),
-    path        = require('path'),
-    Promise     = require('bluebird'),
-    options     = {};
+const   {Storage}   = require('@google-cloud/storage'),
+        BaseStore   = require('ghost-storage-base'),
+        path        = require('path'),
+        Promise     = require('bluebird'),
+        options     = {};
 
 class GStore extends BaseStore {
     constructor(config = {}){
         super(config);
         options = config;
 
-        var gcs = storage({
+        const gcs = new Storage({
             projectId: options.projectId,
             keyFilename: options.key
         });
