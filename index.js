@@ -3,8 +3,8 @@
 const   {Storage}   = require('@google-cloud/storage'),
         BaseStore   = require('ghost-storage-base'),
         path        = require('path'),
-        Promise     = require('bluebird'),
-        options     = {};
+        Promise     = require('bluebird');
+let     options     = {};
 
 class GStore extends BaseStore {
     constructor(config = {}){
